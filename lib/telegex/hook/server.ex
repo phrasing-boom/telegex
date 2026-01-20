@@ -8,7 +8,7 @@ if Code.ensure_loaded?(Plug) do
 
     @secret_token_hander String.downcase("X-Telegram-Bot-Api-Secret-Token")
 
-    if Code.ensure_compiled?(RemoteIp) do
+    if Code.ensure_compiled(RemoteIp) do
       plug RemoteIp
     end
 
