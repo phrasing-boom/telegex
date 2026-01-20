@@ -1,4 +1,4 @@
-if Code.ensure_compiled(Plug) do
+if Code.ensure_compiled(Plug) and Code.ensure_compiled(Plug.Router) do
   defmodule Telegex.Hook.Server do
     @moduledoc false
 
